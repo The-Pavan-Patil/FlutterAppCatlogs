@@ -1,6 +1,7 @@
 //import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:untitled/HomePage.dart';
 
 void main(){
   runApp(Myapp());
@@ -11,13 +12,9 @@ void main(){
  
    @override
    Widget build(BuildContext context) {
+
      return MaterialApp(
-       home: Material(
-         child: Center(
-           child: Text("My First Flutter App"),
-         ),
-       ),
-     );
+       home: HomePage());
    }
  }
  
