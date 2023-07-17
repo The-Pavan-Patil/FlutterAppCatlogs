@@ -15,6 +15,7 @@ class HomePage extends StatelessWidget {
           child: Text("This is the First App"),
         ),
       ),
-    );
+
+    drawer: Drawer(),);
   }
 }
