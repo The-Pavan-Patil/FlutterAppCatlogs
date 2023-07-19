@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:untitled/Pages/HomePage.dart';
 import 'package:untitled/Pages/LoginPage.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:untitled/utils/routings.dart';
+//import 'package:untitled/utils/routings.dart';
 void main(){
   runApp(Myapp());
 
@@ -16,15 +16,15 @@ void main(){
    Widget build(BuildContext context) {
 
      return MaterialApp(
-
+       debugShowCheckedModeBanner: false,
        themeMode: ThemeMode.light,
 
        theme: ThemeData(primarySwatch: Colors.blue, fontFamily: GoogleFonts.lato().fontFamily/* primaryTextTheme: GoogleFonts.latoTextTheme()*/ ),
        darkTheme: ThemeData( brightness: Brightness.dark),
      //initialRoute: "/Home",
      routes: {
-         myRoute.loginRoute : (context) => LoginPage(),
-         myRoute.homeRoute : (context) => HomePage()
+         "/"/*myRoute.loginRoute*/ : (context) => LoginPage(),
+         "/Home"/*myRoute.homeRoute*/ : (context) => HomePage()
      },
      );
 

@@ -35,7 +35,7 @@ class LoginPage extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(100, 40),
                 ),
-                onPressed: () {Navigator.pushNamed(context, myRoute.homeRoute);},
+                onPressed: () {Navigator.pushNamed(context, myRoute.homeRoute );},
                 child: Text('Login'),
               )
             ],
