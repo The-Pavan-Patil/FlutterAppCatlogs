@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:untitled/Pages/HomePage.dart';
 import 'package:untitled/Pages/LoginPage.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:untitled/utils/routings.dart';
 void main(){
   runApp(Myapp());
 
@@ -22,8 +23,8 @@ void main(){
        darkTheme: ThemeData( brightness: Brightness.dark),
      //initialRoute: "/Home",
      routes: {
-         "/" : (context) => LoginPage(),
-       "/Home" : (context) => HomePage()
+         myRoute.loginRoute : (context) => LoginPage(),
+         myRoute.homeRoute : (context) => HomePage()
      },
      );
 
